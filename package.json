@@ -4,9 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
+    "dev": "CS4227/node_modules/.bin/vite",
+    "build": "CS4227/node_modules/.bin/tsc -b && vite build",
+    "lint": "CS4227/node_modules/.bin/eslint .",
+    "preview": "CS4227/node_modules/.bin/vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
